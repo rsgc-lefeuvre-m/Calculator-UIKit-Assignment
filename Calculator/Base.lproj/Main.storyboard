@@ -53,6 +53,10 @@
                                                 <state key="normal" title="±">
                                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="Plusminus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wt-bI-C3S"/>
+                                                    <action selector="percentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2U-Z1-mA4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0t-58-i4o" userLabel="3">
                                                 <rect key="frame" x="188" y="0.0" width="93" height="107"/>
@@ -61,6 +65,9 @@
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="percentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wxc-dq-R3a"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45W-EW-crL">
                                                 <rect key="frame" x="282" y="0.0" width="93" height="107"/>
@@ -119,7 +126,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xu-5X-UC0"/>
+                                                    <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKm-mB-2Xg"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -169,6 +176,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xhn-RQ-NGy"/>
+                                                    <action selector="subtraction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P74-QY-3ig"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -216,6 +224,9 @@
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="addition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WtD-UN-plk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -231,7 +242,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="zero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qBF-Hk-Q7U"/>
-                                                    <action selector="zeroPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjZ-vr-ApH"/>
+                                                    <action selector="zeroPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSr-wa-E4q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THg-8e-NHU">
@@ -241,6 +252,9 @@
                                                 <state key="normal" title=".">
                                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="decimalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vi-Ub-33J"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPP-pU-fNh">
                                                 <rect key="frame" x="281.5" y="0.0" width="93.5" height="107"/>
@@ -250,7 +264,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="equals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JO7-W0-3WE"/>
+                                                    <action selector="equals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Id5-ON-tC7"/>
                                                 </connections>
                                             </button>
                                         </subviews>

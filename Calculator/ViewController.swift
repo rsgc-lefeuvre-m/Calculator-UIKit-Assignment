@@ -65,34 +65,68 @@ class ViewController: UIViewController {
         model.addToNewValue(digit: "9")
         labelDisplay.text = model.providedValue
     }
-    
     @IBAction func zeroPressed(_ sender: Any) {
         model.addToNewValue(digit: "0")
         labelDisplay.text = model.providedValue
     }
-    
+
+    @IBAction func decimalPressed(_ sender: Any) {
+        model.addToNewValue(digit: ".")
+        labelDisplay.text = model.providedValue
+    }
     @IBAction func multiply(_ sender: Any) {
         model.multiply()
     }
-    
     @IBAction func equals(_ sender: Any) {
         model.equals()
-        if model.computedValue != nil {
-            labelDisplay.text = String(format: "%g", model.computedValue!)
-        }
-        
-    }
-    
-    @IBAction func division(_ sender: Any) {
-        model.divide()
-        
+        if model.computedValue != nil{labelDisplay.text = String(format: "%g", model.computedValue!)
     }
 
+    }
+    //Division Action
+    @IBAction func division(_ sender: Any) {
+        model.divide()
+
+    }
+    // Clear Action
     @IBAction func clear(_ sender: Any) {
         model.clear()
-        
+        labelDisplay.text = model.providedValue
+
+    }
+    // Percentage Action
+    @IBAction func percentage(_ sender: Any) {
+        model.percentage()
+        equals ("")
+    }
+    
+    //Addition Action
+    @IBAction func addition(_ sender: Any) {
+        model.addition()
+    }
+    
+    //Subtraction Action
+    @IBAction func subtraction(_ sender: Any) {
+        model.subtraction()
     }
     
     
-    }
     
+//
+//    //Plus Minus
+//    @IBAction func Plusminus(_ sender: Any) {
+//    model.plusminus()
+//    labelDisplay.text = model.providedValue
+//}
+
+
+ 
+
+    
+
+
+  
+
+
+
+}
